@@ -82,6 +82,7 @@ stages:
                 - task: AzureWebApp@1
                   displayName: "Azure App Service Deploy: website"
                   inputs:
-                    azureSubscription:
-                    appName: "$(WebAppName)"
-                    package: "$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip"
+                    azureSubscription: 'Azure para Estudantes(fb55e3b4-21a5-4b3f-8e05-fa3285fe2d2f)'
+                    appType: 'webAppLinux'
+                    appName: 'tailspin-space-game-web-dd223'
+                    package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
